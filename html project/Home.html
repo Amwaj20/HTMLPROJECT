@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aoun </title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif; 
+        }
+        .con{
+            width: 100%;
+            height: 100vh;
+            background-image:url(Img/1122.jpg);
+            background-position: center;
+            background-size: cover;
+            padding-left: 8%;
+            padding-right: 8%;
+            box-sizing: border-box;
+        }
+        .nev{
+            height: 20%;
+            display: flex;
+            align-items: center ;
+        }
+        .Ao{
+            width: 10%;
+            cursor: pointer;
+            margin-left: -20px;
+        }
+        .home{
+            width: 40px;
+            cursor: pointer;
+            margin-left: 40px;
+        }
+        nav{
+            flex:1;
+            text-align: right; 
+            font-weight: bold;
+            /*text-align: center;*/ 
+        }
+        nav ul li{
+            list-style: none;
+            display: inline-block;
+            margin-left: 60px;
+        }nav ul li a{ text-decoration: none;color: rgb(4, 4, 105); font-size: 13px;}
+        .row{
+            display: flex;
+            height: 65%;
+            align-items: center;
+
+        }
+        .col{
+             flex-basis: 50%;     
+        }
+        h1{
+            color:rgb(4, 4, 105);
+            font-size: 100px;
+        }
+        p{
+            color:black;
+            font-size: 15px;
+             line-height: 15px;
+
+        }
+        .card{
+            width: 200px;
+            height: 150px;
+            display: inline-block;
+            border-radius: 10px;
+            padding: 15px 25px;
+            box-sizing: border-box;
+            cursor: pointer;
+            margin: 10px 15px;
+            background-position: center;
+            background-size: cover;
+            transition: transform 0.5s; ;
+        }
+        .card1{
+            background-image: url(Img/Doc.jpg);
+        }
+    
+        .card2{
+            background-image: url(Img/sis.jpg);
+        }
+    
+        .card3{
+            background-image: url(Img/org.jpg);
+        }
+   
+        .card4{
+            background-image: url(Img/DD.jpeg);
+        }
+        .card:hover{
+             transform: translateY(-10px);
+        }
+        h5{
+            color:rgb(4, 4, 105);
+            text-shadow: 0 0 5px rgb(247, 244, 244);
+           
+        }
+    </style>
+   
+
+      
+        
+     
+</head>
+
+<body>
+
+
+<div class="con">
+   <div class="nev">
+    <img src="Img/aoun.png" alt="Aoun" class="Ao">
+    <nav>
+        <ul>
+            <li><a href="Contact us.html" style="font-size: 15px;" >Contact Us</a> </li>
+            <li><a href="file:///C:/Users/user/Desktop/log%20in/index.html"style="font-size: 15px;">Sing In</a> </li>
+            <li><a href="#"style="font-size: 15px;">Sing Up</a> </li>
+
+        </ul>
+    </nav>
+    <img src="Img/hhom.ico" class="home">
+
+   </div> 
+   <div class="row">
+    <div class="col">
+<h1>Aoun</h1><br>
+<p>Aoun ,Home health care experts, we provide you with a suitable environment for safe
+     and smart health care in your place of residence, under the supervision 
+    of qualified medical personnel that give you a sense of comfort and continuous improvement.
+</p>
+    </div>
+    <div class="col">
+       <div class="card card1">
+     <a href="file:///C:/Users/user/Desktop/docter/Doctor.html" ><h5>Home doctor visit service</h5></a>
+        </div> 
+        <div class="card card2">
+           <a href="file:///C:/Users/user/Desktop/AA/nursing.html" ><h5>Health escort service </h5></a>
+        </div> 
+        <div class="card card3">
+            <h5>Home physiotherapy services</h5><!--<p></p>-->
+        </div> 
+        <div class="card card4">
+            <h5>Delivery Service </h5><!--<p></p>-->
+        </div> 
+    </div>
+   </div>
+</div>
+
+</body>
+
+</html>
