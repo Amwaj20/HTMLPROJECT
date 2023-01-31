@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+:root{
+    --fontcolor:#7777a8;
+    --backgroundcolor:#131348;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+    box-sizing: border-box;
+    transition: all .2s linear;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:white;
+    box-shadow: 0 1rem 1rem rgb(0, 0, 0, .1);
+    z-index: 10000000;
+}
+header #logo{
+    font-size: 3rem;
+    color: black;
+}
+header #logo span{
+    color: rgb(10, 10, 77);
+}
+.header .n a{
+
+font-size: 1.7rem;
+margin-left: 1rem;
+color: black;
+text-decoration: none;
+}
+.header .n  a:hover{
+background: rgb(10, 10, 77);
+padding: 1rem;
+border-radius: 15px;
+
+}
+
+.g i{
+font-size: 2rem;
+color:rgb(10, 10, 77);
+margin-left: 1rem;
+}
+
+.icons i{
+font-size: 2rem;
+color: var(--fontcolor);
+margin-left: 1rem;
+}
+header #menu_bars{
+    font-size: 2rem;
+    color: var(--fontcolor);
+    display: none;
+}
+
+header .n.active{
+    left: 0;
+    transition: .5s;
+}
+.inner-image{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin-top: 75px;
+    height: 100vh;
+    transition: transform 0.5s;
+}
+
+.container{
+    background: url(images/doctor.webp);
+    width: 100%;
+    padding-top: 8.5rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.container .main-text{
+    width: 50%;
+    position: absolute;
+    top: 200px;
+    padding: 0 2rem;
+    text-align: center;
+}
+.container .main-text h2{
+    font-size: 40px;
+    color: var rgb(10, 10, 77);
+    padding-bottom: 1.5rem;
+}
+.container .main-text button{
+    padding: 1.5rem 3.5rem;
+    background:rgb(10, 10, 77);
+    color: white;
+    border-radius: 10px;
+    border:1px solid white;
+}
+.service-section{
+    padding: 2rem 7%;
+    background: linear-gradient(#0f0f3f, #7777a8);
+    min-height: 50vh;
+}
+#ourservices{
+    color: white;
+    font-size: 30px;
+    padding: 2rem 0;
+    text-align: center;
+}
+.inner-service-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    text-align: center;
+}
+.service-box{
+    flex: 1 1 200px;
+    padding: 5rem 0;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, .1);
+}
+.service-box i{
+    color: white;
+    font-size: 2rem;
+    padding: .5rem 0;
+}
+.service-box h2{
+    color: white;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.service-box p{
+    color: white;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+}
+.work-section{
+    padding: 4rem 7%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+}
+.inner-work-section h2{
+    font-size: 25px;
+    padding: .5rem 0;
+}
+.scnclass{
+    padding: 0 1rem;
+}
+.m{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 1rem;
+    border-radius: 30px;
+    transition: transform 0.5s;
+}
+.m :hover{
+    transform: translateY(-10px);
+}
+.btn{
+    padding: 1rem 3rem;
+    background: rgb(10, 10, 77);
+    border-radius: 15px;
+   display: inline-block;
+   color: white;
+   font-size: 18px;
+   margin-top: 5px;
+}
+.creative-text{
+    padding: 2rem 0;
+}
+.bb{
+        background-color: rgb(10, 10, 77);
+    min-height: 100vh;
+    padding: 2rem 9%;
+}
+.oo{
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 30px;
+}
+.oo span{
+    color: rgb(86, 86, 171);
+}
+.main .box{
+    flex: 1 1 300px;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.box img{
+    width: 50%;
+    display: inline-block;
+ border-radius: 20px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-position: center;
+  background-size: cover;
+  font-size:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+    html{
+        font-size: 50%;
+    }
+    header #menu_bars{
+        display: initial;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 100%;
+        right: 0;
+        background: var(--backgroundcolor);
+        height: 100vh;
+        text-align: center;
+
+    }
+    header .navbar a{
+        display: block;
+        background: white;
+        margin-top: 1rem;
+        padding: 2rem;
+        width: 90%;
+        border-radius: 10px;
+    }
+    .container .main-text{
+        width: 70%;
+        padding: 0 ;
+    }
+   .work-section{
+       display: grid;
+       grid-template-columns: 1fr;
+   }
+   .myimages img{
+       width: 100%;
+   }
+   .btn{
+       display: block;
+   }
+}

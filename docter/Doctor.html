@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+<link rel="stylesheet" href="st.css">
+<script src="sc.js"></script>
 <body>
     <header class="header">
         <img src="images/aoun.png" width="70px" height="70px">
@@ -12,11 +14,20 @@
         <nav class="n">
         <a href="file:///C:/Users/user/Desktop/html%20project/Home.html">home</a>
         <a href="#">gallery</a>
-        <a href="#">blog</a>
         <a href="file:///C:/Users/user/Desktop/Conuct/conect.html">contact us</a>
 
         </nav>
+        
+    <div class="icons">
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        
+    </div>
 
+<a href="#" id="menu_bars" class="fas fa-bars"></a>
+    </header>
+   
     <div class="g">
         <a href="https://www.facebook.com/campaign/landing.php?campaign_id=1661689889&extra_1=s%7Cc%7C320280751357%7Ce%7Cfacebook%7C&placement=&creative=320280751357&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D1661689889%26adgroupid%3D65800001964%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D9076993%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAiA2rOeBhAsEiwA2Pl7QyXZmmi1b25E-drXYcpPTQpHHqCF3C5qED5ml_Y5psJz8rYBQV164RoC_uYQAvD_BwE">  <img src="images/FAC.jpeg" width="20px" height="20px"> </a>
      <a href="https://www.whatsapp.com/"><img src="images/WA.jpeg" width="20px" height="20px"></a>
@@ -108,272 +119,6 @@
 </div>
 </div>
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
-:root{
-    --fontcolor:#7777a8;
-    --backgroundcolor:#131348;
-}
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'roboto', sans-serif;
-    box-sizing: border-box;
-    transition: all .2s linear;
-    text-transform: capitalize;
-    text-decoration: none;
-}
-html{
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-}
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 2rem 7%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background:white;
-    box-shadow: 0 1rem 1rem rgb(0, 0, 0, .1);
-    z-index: 10000000;
-}
-header #logo{
-    font-size: 3rem;
-    color: black;
-}
-header #logo span{
-    color: rgb(10, 10, 77);
-}
-.header .n a{
-
-font-size: 1.7rem;
-margin-left: 1rem;
-color: black;
-text-decoration: none;
-}
-.header .n  a:hover{
-background: rgb(10, 10, 77);
-padding: 1rem;
-border-radius: 15px;
-
-}
-
-.g i{
-font-size: 2rem;
-color:rgb(10, 10, 77);
-margin-left: 1rem;
-}
-
-header .n.active{
-    left: 0;
-    transition: .5s;
-}
-.inner-image{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    margin-top: 75px;
-    height: 100vh;
-    transition: transform 0.5s;
-}
-
-.container{
-    background: url(images/docter.jpeg);
-    width: 100%;
-    padding-top: 8.5rem;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-}
-.container .main-text{
-    width: 50%;
-    position: absolute;
-    top: 200px;
-    padding: 0 2rem;
-    text-align: center;
-}
-.container .main-text h2{
-    font-size: 40px;
-    color: var rgb(10, 10, 77);
-    padding-bottom: 1.5rem;
-}
-.container .main-text button{
-    padding: 1.5rem 3.5rem;
-    background:rgb(10, 10, 77);
-    color: white;
-    border-radius: 10px;
-    border:1px solid white;
-}
-.service-section{
-    padding: 2rem 7%;
-    background: linear-gradient(#0f0f3f, #7777a8);
-    min-height: 50vh;
-}
-#ourservices{
-    color: white;
-    font-size: 30px;
-    padding: 2rem 0;
-    text-align: center;
-}
-.inner-service-section{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-    text-align: center;
-}
-.service-box{
-    flex: 1 1 200px;
-    padding: 5rem 0;
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, .1);
-}
-.service-box i{
-    color: white;
-    font-size: 2rem;
-    padding: .5rem 0;
-}
-.service-box h2{
-    color: white;
-    font-size: 2rem;
-    padding: 1rem 0;
-}
-.service-box p{
-    color: white;
-    font-size: 1.5rem;
-    padding: 0 1rem;
-}
-.work-section{
-    padding: 4rem 7%;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    justify-content: center;
-}
-.inner-work-section h2{
-    font-size: 25px;
-    padding: .5rem 0;
-}
-.scnclass{
-    padding: 0 1rem;
-}
-.m{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 1rem;
-    border-radius: 30px;
-    transition: transform 0.5s;
-}
-.m :hover{
-    transform: translateY(-10px);
-}
-.btn{
-    padding: 1rem 3rem;
-    background: rgb(10, 10, 77);
-    border-radius: 15px;
-   display: inline-block;
-   color: white;
-   font-size: 18px;
-   margin-top: 5px;
-}
-.creative-text{
-    padding: 2rem 0;
-}
-.bb{
-        background-color: rgb(10, 10, 77);
-    min-height: 100vh;
-    padding: 2rem 9%;
-}
-.oo{
-    color: white;
-    padding: 2rem 0;
-    text-align: center;
-    font-size: 30px;
-}
-.oo span{
-    color: rgb(86, 86, 171);
-}
-.main .box{
-    flex: 1 1 300px;
-}
-.main{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-.box img{
-    width: 50%;
-    display: inline-block;
- border-radius: 20px;
-  padding: 15px 25px;
-  box-sizing: border-box;
-  cursor: pointer;
-  margin: 10px 15px;
-  background-position: center;
-  background-size: cover;
-  font-size:20px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width:768px) {
-    html{
-        font-size: 50%;
-    }
-    header #menu_bars{
-        display: initial;
-    }
-
-    header .navbar{
-        position: absolute;
-        top: 100%;
-        left: 100%;
-        right: 0;
-        background: var(--backgroundcolor);
-        height: 100vh;
-        text-align: center;
-
-    }
-    header .navbar a{
-        display: block;
-        background: white;
-        margin-top: 1rem;
-        padding: 2rem;
-        width: 90%;
-        border-radius: 10px;
-    }
-    .container .main-text{
-        width: 70%;
-        padding: 0 ;
-    }
-   .work-section{
-       display: grid;
-       grid-template-columns: 1fr;
-   }
-   .myimages img{
-       width: 100%;
-   }
-   .btn{
-       display: block;
-   }
-}
-
-</style>
 
 </body>
 </html>
